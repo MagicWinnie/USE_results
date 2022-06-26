@@ -69,7 +69,7 @@ response = tg.get_chats()
 response.wait()
 
 message = "Новая новость!\n" + news if result == 1 else "Превышено время ожидания сервера"
-response = tg.send_message(604005377, message)
+response = tg.send_message(login_data["chat_id"], message)
 response.wait()
 
 time.sleep(2)

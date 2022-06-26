@@ -16,7 +16,7 @@ tg.login()
 response = tg.get_chats()
 response.wait()
 
-response = tg.send_message(604005377, "Пришли результаты ЕГЭ!")
+response = tg.send_message(login_data["chat_id"], "Пришли результаты ЕГЭ!")
 response.wait()
 
 time.sleep(2)

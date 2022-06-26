@@ -76,7 +76,7 @@ else:
 response = tg.call_method(
     "sendMessage",
     params={
-        "chat_id": 604005377,
+        "chat_id": login_data["chat_id"],
         "input_message_content": {
             "@type": "inputMessageText",
             "text": {"@type": "formattedText", "text": message},
